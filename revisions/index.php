@@ -39,7 +39,9 @@ echo "<br>";
 include 'boucles.php';
 echo "<br>";
 
+echo "<br>";
+include 'condition.php';
+echo "<br>";
+
 
 include 'footer.php';
-
-?>
