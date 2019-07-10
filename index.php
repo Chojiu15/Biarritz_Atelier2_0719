@@ -92,8 +92,17 @@ $starwars = [
 echo "<ul>";
 foreach ($starwars as $key => $value) {
     foreach ($value as $nextCle => $nextVal) {
-        echo "<h2>".$key."</h2>"."<ul><li>".$nextVal."</li></ul>";
+        echo "<h2>" . $key . "</h2>" . "<ul><li>" . $nextVal . "</li></ul>";
     }
+}
+
+echo "</ul>";
+echo "<hr>";
+
+echo "<ul>";
+foreach ($starwars as $key => $value) {
+
+    echo "<h2>" . $key . "</h2>" . "<ul><li>" . count($value) . "</li></ul>";
 }
 
 echo "</ul>";
