@@ -35,6 +35,11 @@ $wizard = 'Gandalf';
 
 require 'wizard.php';
 
+echo "<br>";
+include 'boucles.php';
+echo "<br>";
+
+
 include 'footer.php';
 
 ?>
