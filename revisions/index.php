@@ -43,5 +43,8 @@ echo "<br>";
 include 'condition.php';
 echo "<br>";
 
+echo "<br>";
+include 'tableauindexe.php';
+echo "<br>";
 
 include 'footer.php';
