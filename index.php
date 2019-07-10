@@ -27,14 +27,28 @@ for ($i = 10; $i > -1; $i--) {
 
 echo "<br \>";
 echo "afficher de 25 à 50 inclus, tous les 5 <br \>";
-for ($i = 25; $i < 51; $i+=5) {
+for ($i = 25; $i < 51; $i += 5) {
     echo $i . " première boucle" . "<br \>";
 }
 echo "<br \>";
 echo "afficher les valeurs possibles entre 10 à -10, tous les 3  <br \>";
 
-for ($i=10; $i >=-10  ; $i-=3) { 
+for ($i = 10; $i >= -10; $i -= 3) {
     echo $i . " première boucle" . "<br \>";
 }
 
 echo "<br \> <hr>";
+/* condition  */
+$name = 'Darth Vader';
+
+if ($name == "Darth Vader" || $name == "Darth Sidious") {
+    echo "yesss";
+} elseif ($name == "yoda") {
+    echo "jedi";
+} else {
+    echo "sans doute une personne sans pouvoir";
+}
+    
+/* test si $name égal "Darth Vader" ou "Darth Sidious", affiche "Sith"
+sinon si $name égal "Yoda", affiche "Jedi"
+sinon affiche "sans doute une personne sans pouvoir" */
