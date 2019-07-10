@@ -41,14 +41,60 @@ echo "<br \> <hr>";
 /* condition  */
 $name = 'Darth Vader';
 
-if ($name == "Darth Vader" || $name == "Darth Sidious") {
+if ($name === "Darth Vader" || $name === "Darth Sidious") {
     echo "yesss";
-} elseif ($name == "yoda") {
+} elseif ($name === "yoda") {
     echo "jedi";
 } else {
     echo "sans doute une personne sans pouvoir";
 }
-    
-/* test si $name égal "Darth Vader" ou "Darth Sidious", affiche "Sith"
-sinon si $name égal "Yoda", affiche "Jedi"
-sinon affiche "sans doute une personne sans pouvoir" */
+
+echo "<br \> <hr>";
+
+$tableau = array("yoda" => 900, "Leia" => 19, "Luke Skywalker" => 19, "Darth Vader" => 46, "Chewbacca" => 200);
+$tableau["Han Solo"] = 29;
+
+asort($tableau);
+
+echo "<ul>";
+foreach ($tableau as $key => $value) {
+    echo "<li>" . $key . " age " . $value . " ans" . "</li>";
+}
+echo "</ul>";
+echo "<br \>";
+
+ksort($tableau);
+// recherche dans un tableau 
+echo "<br \>";
+echo "<ul>";
+foreach ($tableau as $key => $value) {
+    echo "<li>" . $key . " age " . $value . " ans" . "</li>";
+}
+echo "</ul>";
+echo "<br \>";
+
+echo "<ul>";
+foreach ($tableau as $key => $value) {
+    if ($value > 100) {
+        echo "<li>" . $key . " age " . $value . " ans" . "</li>";
+    }
+}
+echo "</ul>";
+echo "<hr>";
+
+$starwars = [
+    "Jedi" => ["Luke Skywalker", "Yoda", "Windu"],
+    "Sith" => [" Darth Vader", "Darth Maul", "Dooku"],
+    "Gungan" => ["Jar Jar", "Binks"],
+    "Human" => ["Han Solo", " Leia"]
+];
+
+echo "<ul>";
+foreach ($starwars as $key => $value) {
+    foreach ($value as $nextCle => $nextVal) {
+        echo "<h2>".$key."</h2>"."<ul><li>".$nextVal."</li></ul>";
+    }
+}
+
+echo "</ul>";
+echo "<hr>";
