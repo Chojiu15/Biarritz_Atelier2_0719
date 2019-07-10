@@ -32,12 +32,34 @@ echo " </ul>";
 
 
 echo "<ul>";
-
 foreach ($jediAge as $key => $value) {
 
     if ($value[0] > 100) {
         echo "<li>$key $value[0]</li>";
     }
 }
-
 echo " </ul>";
+
+$jediRace = [
+    'Jedi' => ['Luke Skywalker', 'Yoda', 'Windu'],
+    'Sith' => ['Darth Varder', 'Darth Maul', 'Dooku'],
+    'Gungan' => ['Jar Jar Binks'],
+    'Human' => ['Han Solo', 'Leia']
+];
+
+foreach ($jediRace as $race => $noms) {
+    echo "<h2> $race </h2>";
+    echo "<ul>";
+    foreach ($noms as $nom) {
+        echo "<li>$nom</li>";
+    }
+    echo "</ul>";
+}
+
+echo "<ul>";
+
+foreach ($jediRace as $race => $value) {
+    echo "<li>$race - ".count($value)."</li>";
+}
+
+echo "</ul>";
