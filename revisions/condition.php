@@ -17,3 +17,5 @@ if ($name == 'Darth Vader' || $name == 'Darth Sidious') {
 } else {
     echo "sans doute une personne sans pouvoir";
 }
+
+

@@ -47,4 +47,8 @@ echo "<br>";
 include 'tableauindexe.php';
 echo "<br>";
 
+echo "<br>";
+include 'tableauasso.php';
+echo "<br>";
+
 include 'footer.php';
